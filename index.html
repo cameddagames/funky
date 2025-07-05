@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Musica</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Benvenuto nella tua app musicale!</h1>
+  </header>
+  
+  <section id="search">
+    <input type="text" id="searchBar" placeholder="Cerca canzoni..." />
+    <button onclick="searchMusic()">Cerca</button>
+  </section>
+
+  <section id="results">
+    <!-- I risultati della ricerca andranno qui -->
+  </section>
+
+  <section id="player" style="display:none;">
+    <audio id="audioPlayer" controls>
+      <source id="audioSource" />
+      Il tuo browser non supporta l'elemento audio.
+    </audio>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
